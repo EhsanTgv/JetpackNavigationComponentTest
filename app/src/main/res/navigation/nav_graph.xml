@@ -9,10 +9,12 @@
         android:id="@+id/fragmentOne"
         android:name="com.taghavi.jetpacknavigationcomponenttest.FragmentOne"
         android:label="fragment_one"
-        tools:layout="@layout/fragment_one" >
+        tools:layout="@layout/fragment_one">
         <action
             android:id="@+id/action_fragmentOne_to_fragmentTwo"
-            app:destination="@id/fragmentTwo" />
+            app:destination="@id/fragmentTwo"
+            app:popUpTo="@id/fragmentOne"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/fragmentTwo"
